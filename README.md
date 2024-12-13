@@ -17,6 +17,9 @@ docker create network nama_network
 EX envnya: MONGO_URI=mongodb://mongo_db_container:27017/datatesting , port yg digunakan adalah port dari container/hostnya bukan port external atau yg di expose. 
 2. docker container create --name mongo_be_container --network nama_network -p 8080:27017 mongo_be_image
 3. docker container start mongo_be_image
+
+## cara cek network docker
+docker network inspect nama_network
 ```
 
 >[!NOTE]
